@@ -6,6 +6,9 @@ function display(id) {
         content = "";
         flag = 0;
     }
+     if(id === "zero" && content === ""){
+      return;
+    }
   content += document.getElementById(id).innerHTML;
   document.getElementById("values").innerHTML = content;
 }
