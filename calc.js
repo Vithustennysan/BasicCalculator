@@ -6,7 +6,7 @@ function display(id) {
         content = "";
         flag = 0;
     }
-     if(id === "zero" && content === "" || content.endsWith("+") && id === "zero"){
+     if(id === "zero" && content === "" || (content.endsWith("+") || content.endsWith("*") || content.endsWith("-") || content.endsWith("/")) && id === "zero"){
       return;
     }
   content += document.getElementById(id).innerHTML;
