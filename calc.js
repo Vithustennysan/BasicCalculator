@@ -6,7 +6,7 @@ function display(id) {
         content = "";
         flag = 0;
     }
-     if(id === "zero" && content === ""){
+     if(id === "zero" && content === "" || content.endsWith("0")){
       return;
     }
   content += document.getElementById(id).innerHTML;
